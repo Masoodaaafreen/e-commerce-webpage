@@ -1,0 +1,142 @@
+body{
+    font-family: arail sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    color: palevioletred;
+    text-align: center;
+    text-decoration: dashed;
+    padding: 10px,0;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: stretch;
+    cursor: pointer;
+    gap:20px;
+    
+
+    
+}
+
+
+main{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+
+}
+
+.product{
+    
+
+justify-content: center;
+justify-items: center;
+}
+
+
+button{
+    background-color: palevioletred;
+    color: beige;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+
+
+ul{
+    text-decoration: none;
+    padding: 0%;
+    margin:0;
+    flex-direction: row;
+    gap:25px;
+    justify-content: space-between;
+    display: flex;
+    background-color: palevioletred;
+    
+}
+
+li{
+    list-style: none;
+text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    
+}
+
+.heart{
+
+    position: absolute;
+    padding-left: 200px;
+    
+color: red;
+cursor: pointer;
+
+
+}
+.heart:hover{
+    color: darkgray;
+    transition: color 0.2 ease;
+}
+
+.cart-items-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    z-index: 1;
+  }
+  
+  .cart-items-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cart-items-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-items-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .total-price {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .checkout-button {
+    background-color: palevioletred;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+  }
+  
+  .show-cart-items {
+    position: relative;
+    background-color: palevioletred;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+  }
+  
+  .show-cart-items:focus + .cart-items-container {
+    display: block;
+  }
